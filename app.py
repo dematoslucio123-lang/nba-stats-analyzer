@@ -9,8 +9,7 @@ st.markdown("Probabilidades baseadas em dados reais da temporada")
 
 # Input do usuário
 nome = st.text_input("Nome do jogador:", placeholder="Ex: Stephen Curry")
-season = st.selectbox("Temporada:", ["2024-25", "2023-24", "2022-23"])
-
+season = st.selectbox("Temporada:", ["2025-26", "2024-25", "2023-24", "2022-23"])
 if st.button("Analisar") and nome:
     with st.spinner("Buscando dados reais da NBA..."):
         resultado = players.find_players_by_full_name(nome)
